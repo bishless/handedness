@@ -1,24 +1,26 @@
 /* global jQuery, console */
 
+// this is being cobbled together and DOES NOT WORK YET
+
 (function ( $ ) {
-	
+
 	$.fn.handedness = function (options) {
-		
+
 		// starting w/ right-handed as default because lazy
 		var defHand = {
-			hand: 'righthanded'
+			hand: 'right'
 		};
-	
+
 		var obj = $.extend(defHand, options);
-		
+
 		return this.each(function () {
-			
+
 			var selButton = $(this);
-			
+
 			selButton.click(function () {
 				console.log(this.class() + 'button has been clicked');
 				// righthanders
-				if (this.class === 'right') { 
+				if (this.class === 'right') {
 					$('.click-primary').text().replace('right', 'left');
 					$('.click-secondary').text().replace('left', 'right');
 				// lefthanders
@@ -28,7 +30,7 @@
 				}
 			});
 		});
-		
+
 	};
-	
+
 })( jQuery );
