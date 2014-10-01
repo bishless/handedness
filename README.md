@@ -5,7 +5,7 @@ Wouldn't it be nice if documentation were written for both right AND left hander
 ## Rough
 
 1. write default mouse button orientation to cookie or localStorage (righthanded).
-1. when ready, search for instances of ' click ' or 'left-click' (or strings that make sense).
+1. when ready, search for instances of ' click ' or 'left-click' and/or other strings that make sense. (note: ... this is harder than I expected.)
 1. wrap those matches with '<span class="mb-primary">' and '</span>'.
 1. then search for instances of 'right-click' (+others).
 1. wrap those matches with '<span class="mb-secondary">' and '</span>'.
