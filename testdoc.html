@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>handedness Test Doc</title>
+</head>
+<body>
+<p class="mb-ui">I hold my mouse with my <button class="left">Left</button> <button class="right">Right</button> hand.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore praesentium, provident, molestiae similique blanditiis culpa quo iusto omnis vel animi et voluptatem, odit unde vero? Blanditiis eius ut, molestiae!</p>
+	<p>Praesentium ipsa quisquam laudantium inventore click odit vero, distinctio, asperiores veniam, impedit dignissimos soluta tempore officiis. Praesentium perferendis debitis sed vel beatae ab similique eius eaque, ullam tempore accusantium, blanditiis officiis.</p>
+	<p>Right-click non esse obcaecati cum inventore nesciunt, officia explicabo at perspiciatis ipsa sit quo pariatur ipsam ex. Quidem, earum eius aliquid nostrum cupiditate, necessitatibus iure laudantium maiores itaque quos maxime deserunt.</p>
+	<p>Ad amet dolore rerum natus voluptas animi, click perferendis, aspernatur corporis ea ipsum esse, alias tempore, ex quaerat rem. Quae amet explicabo harum repellendus corrupti deleniti incidunt quo quaerat, adipisci alias!</p>
+	<p>Vitae natus quisquam molestias commodi distinctio, nisi amet quidem inventore. Dicta, voluptatum, id. Consequuntur, velit iusto possimus neque facere quod dolor esse molestias right-click accusamus excepturi illo quis tenetur eligendi qui.</p>
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- <script src="js/handedness.min.js"></script> -->
+<script>
+	$(document).ready(function () {
+		
+		$("button.right").click(function () {
+			$(".pri").html("click");
+			$(".sec").html("right-click");
+		});
+		
+		$("button.left").click(function () {
+			$(".pri").html("right-click");
+			$(".sec").html("click");
+		});
+		
+	});
+</script>
+</body>
+</html>
