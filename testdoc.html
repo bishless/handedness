@@ -3,15 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>handedness Test Doc</title>
+	<style>
+		body {
+			background: #eee;
+			color: #444;
+			font-family: sans-serif;
+		}
+		article {
+			width: 480px;
+		}
+		p.mb-ui {
+			font-family: monospace;
+			color: #111;
+		}
+		em.pri, 
+		em.sec {
+			font-style: normal;
+			color: blue;
+		}
+		.mb-ui button {
+			margin: 0;
+			padding: 4px 10px;
+			background: #444;
+			color: #ccc;
+			border: none;
+			font-size: 90%;
+		}
+		.mb-ui button:hover {
+			background: #666;
+		}
+		.mb-ui button.left {
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-right: 1px dotted #666;
+		}
+		.mb-ui button.right {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	</style>
 </head>
 <body>
-<p class="mb-ui">I hold my mouse with my <button class="left">Left</button> <button class="right">Right</button> hand.</p>
+<article>
+<h1>Mouse button orientation sensitivity training</h1>
+<p class="mb-ui">I hold my mouse with my <button class="left" title="Southpaws Unite!">Left</button><button class="right" title="Right is Right!">Right</button> hand.</p>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore praesentium, provident, molestiae similique blanditiis culpa quo iusto omnis vel animi et voluptatem, odit unde vero? Blanditiis eius ut, molestiae!</p>
-	<p>Praesentium ipsa quisquam laudantium inventore click odit vero, distinctio, asperiores veniam, impedit dignissimos soluta tempore officiis. Praesentium perferendis debitis sed vel beatae ab similique eius eaque, ullam tempore accusantium, blanditiis officiis.</p>
-	<p>Right-click non esse obcaecati cum inventore nesciunt, officia explicabo at perspiciatis ipsa sit quo pariatur ipsam ex. Quidem, earum eius aliquid nostrum cupiditate, necessitatibus iure laudantium maiores itaque quos maxime deserunt.</p>
-	<p>Ad amet dolore rerum natus voluptas animi, click perferendis, aspernatur corporis ea ipsum esse, alias tempore, ex quaerat rem. Quae amet explicabo harum repellendus corrupti deleniti incidunt quo quaerat, adipisci alias!</p>
-	<p>Vitae natus quisquam molestias commodi distinctio, nisi amet quidem inventore. Dicta, voluptatum, id. Consequuntur, velit iusto possimus neque facere quod dolor esse molestias right-click accusamus excepturi illo quis tenetur eligendi qui.</p>
+	<p>Praesentium ipsa quisquam laudantium inventore <em class="pri">click</em> odit vero, distinctio, asperiores veniam, impedit dignissimos soluta tempore officiis. Praesentium perferendis debitis sed vel beatae ab similique eius eaque, ullam tempore accusantium, blanditiis officiis.</p>
+	<p><em class="sec">Right-click</em> non esse obcaecati cum inventore nesciunt, officia explicabo at perspiciatis ipsa sit quo pariatur ipsam ex. Quidem, earum eius aliquid nostrum cupiditate, necessitatibus iure laudantium maiores itaque quos maxime deserunt.</p>
+	<p>Ad amet dolore rerum natus voluptas animi, <em class="pri">click</em> perferendis, aspernatur corporis ea ipsum esse, alias tempore, ex quaerat rem. Quae amet explicabo harum repellendus corrupti deleniti incidunt quo quaerat, adipisci alias!</p>
+	<p>Vitae natus quisquam molestias commodi distinctio, nisi amet quidem inventore. Dicta, voluptatum, id. Consequuntur, velit iusto possimus neque facere quod dolor esse molestias <em class="sec">right-click</em> accusamus excepturi illo quis tenetur eligendi qui.</p>
+</article>
 	
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- <script src="js/handedness.min.js"></script> -->
